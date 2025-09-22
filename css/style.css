@@ -1,0 +1,239 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+
+    width: 100%;
+    top: 0;
+    left: 0;
+    position: fixed;
+    z-index: 10000;
+    background-color: #2c2c2c;
+    padding: 15px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color:#fff;
+    font-family: Arial, Helvetica, sans-serif;
+
+    box-shadow:  0 4px 8px rgba(0, 0, 0, 0.2);
+    
+}
+
+header .logo{
+font-size: 28px;
+margin-right: 10px;
+}
+
+header p{
+    font-size: 22px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+header .brand{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+header .logo, header p{
+    display: inline-block;
+}
+header ul{
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+header ul li a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 500;
+    border:  2px solid white;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+    padding: 6px 14px;
+}
+header ul li a:hover{
+    color: #2c2c2c;
+    background-color: #fff;
+    border:  2px solid #2c2c2c;
+}
+
+/* ////////////////////////////// */
+.search {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 100px auto 20px;  
+    gap: 0;
+  }
+  
+  .category-select {
+    padding: 10px 12px;
+    border: 2px solid #ccc;
+    border-right: none;        
+    border-radius: 6px 0 0 6px;
+    outline: none;
+    font-size: 14px;
+  }
+
+  .search input {
+    padding: 10px 15px;
+    width: 250px;
+    border: 2px solid #ccc;
+    border-left: none;
+    outline: none;
+    font-size: 14px;
+  }
+  
+  .search button {
+    padding: 10px 18px;
+    border: none;
+    background-color: #f39c12;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 0 6px 6px 0;
+    transition: background-color 0.3s ease;
+  }
+  
+  .search button:hover {
+    background-color: #e67e22;
+  }
+
+
+  /* //////////////////////////////////////////// */
+
+.products {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    max-width: 1100px;
+    margin: 40px auto;
+    padding: 0 20px;
+  }
+  
+  .card {
+    background: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    text-align: center;
+    padding: 15px;
+    transition: transform 0.3s ease;
+  }
+  
+  .card:hover {
+    transform: translateY(-5px);
+  }
+
+  .card img {
+    width: 100%;
+    height: 250px;
+    border-radius: 6px;
+    object-fit: cover;
+  }
+  
+  .card h3 {
+    margin: 12px 0 5px;
+    font-size: 18px;
+  }
+  
+  .card .category {
+    font-size: 14px;
+    color: #7f8c8d;
+    margin-bottom: 5px;
+  }
+  
+
+  .card .price {
+    font-size: 16px;
+    font-weight: bold;
+    color: #27ae60;
+    margin-bottom: 10px;
+  }
+  
+
+  .card-actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .add-cart {
+    background: #f39c12;
+    border: none;
+    color: white;
+    padding: 8px 12px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: all 0.3s ease;
+  }
+  
+  .add-cart:hover {
+    background: #e67e22;
+  }
+  
+  .heart {
+    font-size: 20px;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+  }
+  
+  .heart:hover {
+    transform: scale(1.2);
+    color: red;
+  }
+
+  /* /////////////////////////////////////// */
+  footer {
+    background-color:#2c2c2c;
+    color: white;
+    text-align: center;
+    padding: 15px 10px;
+    font-size: 14px;
+    margin-top: 40px;
+  }
+  
+  footer .footer-links {
+    margin-top: 8px;
+  }
+  
+  footer .footer-links a {
+    color: #f39c12;
+    margin: 0 10px;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  footer .footer-links a:hover {
+    color: #e67e22;
+  }
+
+  /* ////////////// ///////////////////////*/
+  
+  header span{
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+   text-transform: uppercase;
+  }
+
+  header button{
+    text-decoration: none;
+    color: #121212;
+    font-size: 16px;
+    font-weight: 500;
+    border:  2px solid white;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+    padding: 6px 14px;
+    cursor: pointer;
+  }
+  header button:hover{
+  color: white;
+  background-color:#121212 ;
+  border:  2px solid white;}

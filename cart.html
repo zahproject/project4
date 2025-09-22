@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cart - Book Store</title>
+  <link rel="stylesheet" href="css/cart.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header>
+    <div class="brand">
+      <div class="logo">📚</div>
+      <p>BOOK STORE</p>
+    </div>
+    <div id="user_info" style="display: flex; align-items: center; gap: 10px;">
+      <span id="user"></span>
+      <button id="logout">Logout</button>
+      <div id="cart-container" style="position: relative; cursor: pointer;">
+         <a  href="index.html" id="cart-count">back to home</a>
+      </div>
+    </div>
+  </header>
+<br><br><br><br><br>
+  <!-- /////////////// -->
+  <main class="cart-page">
+   
+    <section class="cart-products">
+      <h2   style="border-bottom: 2px solid red; display: inline-block;">Products in Cart</h2>
+      <br><br>
+      <div id="cart-items" class="cart-items"></div>
+    </section>
+
+   
+    <section class="cart-total">
+        
+      <h2>Total</h2>
+      <p id="total-price">$0.00</p>
+    </section>
+
+    <section class="liked-products">
+      <h2 style="border-bottom: 2px solid red; display: inline-block;">Liked Products</h2>
+      <br><br>
+      <div id="liked-items"></div>
+    </section>
+  </main>
+
+  <script src="js/cart.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>

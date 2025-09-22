@@ -1,0 +1,124 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f8f8f8;
+}
+
+
+.cart-page {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+    flex-wrap: wrap;
+}
+
+
+.cart-products, .cart-total, .liked-products {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    flex: 1 1 300px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    text-transform: uppercase;
+}
+
+#cart-count{
+    text-decoration: none;
+    color: #121212;
+    font-size: 16px;
+    font-weight: 500;
+    border:  2px solid  #121212;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+    padding: 6px 14px;
+    cursor: pointer;
+    background-color: white;
+    transition: all 0.3s ease;
+}
+
+#cart-count:hover{
+    background-color:#121212 ;
+    border:  2px solid  white;
+    color:white ;
+}
+.cart-item {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    background: #fff;
+    margin-bottom: 15px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+  }
+  
+  .cart-item img {
+    width: 120px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8px;
+  }
+  
+  .cart-item-info {
+    flex: 1;
+  }
+  
+  .cart-item-controls {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  
+  .cart-item-controls button {
+    padding: 6px 10px;
+    border: none;
+    background:  #f39c12;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .cart-item-controls button.remove {
+    background: #dc3545;
+  }
+  
+  .cart-item-controls button:hover {
+    opacity: 0.8;
+  }
+
+
+.cart-item-controls button {
+    padding: 4px 8px;
+    margin: 0 2px;
+    cursor: pointer;
+    border: none;
+    background:  #f39c12;
+    color: white;
+    border-radius: 4px;
+}
+.cart-total{
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+#total-price {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+
+@media screen and (max-width: 900px) {
+    .cart-page {
+        flex-direction: column;
+    }
+}
+
+
